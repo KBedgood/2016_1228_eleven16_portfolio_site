@@ -30,7 +30,8 @@ body {
 
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 0px;
+  border-width: 0 0 1px;
+  border-bottom-color: $color-darkGrey;
 }
 
 // --------------------------------------------------
@@ -60,27 +61,40 @@ body {
 // Navigation : Button
 // --------------------------------------------------
 .btn-default {
-  color: white;
+  color: $color-accent;
   font-weight: 700;
   background-color: $color-accent;
-  border-color: white;
-  border-width: 2 px;
-  &:hover {
-    color: $color-accent;
+  border: 1px solid white;
+  margin-right: 15px;
+  &:hover,&:active {
+    color: white;
     background-color: white;
     border-color: none;
+    text-decoration: none;
   }
 }
 
 .btn-default:hover {
   color: $color-accent;
   background-color: white;
-  border-color: none;
+  border: 1px solid transparent;
+   a{
+    color: $color-accent;
+   }
 }
 
 navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+
+    }
 }
 
 // ----------------------------------------------------------------------------------------------------
@@ -91,7 +105,6 @@ navbar-default .navbar-collapse,
 }
 
 #typedWrapper {
-  font-family: AvenirNext-Regular;
   font-size: 28px;
   color: #FFFFFF;
   margin-bottom: 21px;
@@ -150,7 +163,6 @@ navbar-default .navbar-collapse,
 /* Hello Universe.: */
 
 h1 {
-  font-family: AvenirNext-Regular;
   font-size: 48px;
   color: #FFFFFF;
   margin-top: 90px;
@@ -160,7 +172,6 @@ h1 {
 /* My name is Kristie.: */
 
 h2 {
-  font-family: AvenirNext-Regular;
   font-size: 28px;
   color: #FFFFFF;
 }
@@ -169,7 +180,6 @@ h2 {
 /* I offer you 20+ year: */
 
 h4 {
-  font-family: AvenirNext-Regular;
   font-size: 14px;
   color: #FFFFFF;
   line-height: 26px;
@@ -182,13 +192,22 @@ h4 {
 .connect-kb {
   background: #007D8B;
   border-radius: 8px;
+  border: none;
+  width: 176px;
+  margin-top: 7px;
+}
+
+.connect-buttontext {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 12px;
 }
 
 
 /* Connect.: */
 
 h3 {
-  font-family: AvenirNext-DemiBold;
+  font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
 }
@@ -197,7 +216,6 @@ h3 {
 /* I believe if our wish: */
 
 .dandelion-text {
-  font-family: AvenirNext-Italic;
   font-size: 12px;
   color: #FFFFFF;
   line-height: 23px;
@@ -217,20 +235,18 @@ h3 {
 }
 
 // ----------------------------------------------------------------------------------------------------
-// SECTION : Brand Experience
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
 // SECTION : Skills + Education
 // ----------------------------------------------------------------------------------------------------
 .cred-section {
   margin: 0 auto;
   background-color: $color-accent;
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
 .cred-wrapper {
   text-align: center;
   margin-top: 67px;
-  display: inline-block;
   margin: 0 auto;
   margin-bottom: 67px;
 }
@@ -249,7 +265,7 @@ h3 {
 
 .cred-title {
   /* Print + Packaging De: */
-  font-family: AvenirNext-DemiBold;
+  font-weight: 700;
   font-size: 21px;
   color: #FFFFFF;
   margin-top: 22px;
@@ -258,7 +274,7 @@ h3 {
 
 .institute {
   /* The Iron Yard Front-: */
-  font-family: AvenirNext-DemiBold;
+  font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
   line-height: 26px;
@@ -304,7 +320,6 @@ h3 {
 ul {
   list-style: none;
   /* Concept – Executed E: */
-  font-family: AvenirNext-Regular;
   font-size: 14px;
   color: #FFFFFF;
   line-height: 30px;
@@ -315,6 +330,41 @@ ul {
 // ----------------------------------------------------------------------------------------------------
 // SECTION : Brand Experience
 // ----------------------------------------------------------------------------------------------------
+.brand-section {
+  padding: 0px 20%;
+}
+
+.brand-text {
+  text-align: center;
+  margin-top: -20px;
+}
+
+h2.brand-sub {
+  /* Abbrvtd. Collection: */
+  font-size: 28px;
+  color: #9B9B9B;
+  margin-top: 3px;
+}
+
+p.brand-description {
+  /* I offer you 20+ year: */
+  font-size: 14px;
+  color: #9B9B9B;
+  line-height: 26px;
+  padding-bottom: 13px;
+}
+
+.brand-title {
+  /* Brand Experience: */
+  font-size: 48px;
+  color: #9B9B9B;
+}
+
+img {
+  max-width: 85%;
+  margin-top: 20px;
+}
+
 // ----------------------------------------------------------------------------------------------------
 // SECTION : Print Design Portfolio
 // ----------------------------------------------------------------------------------------------------

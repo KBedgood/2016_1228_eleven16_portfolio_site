@@ -5,8 +5,10 @@ $(document).ready(function() {
   $(function() {
     $(".typedKB").typed({
       strings: [
-        "I love a boy band (singular).",
-        "I do not like food in my food.",
+        "This site is under construction.",
+        "Thank you for your patience.",
+        "Yes, I designed it.",
+        "Yes, I'm developing it.",
         "My name is Kristie."
       ],
       typeSpeed: 0,

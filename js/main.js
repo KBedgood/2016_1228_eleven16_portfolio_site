@@ -7,8 +7,8 @@ $(document).ready(function() {
       strings: [
         "This site is under construction.",
         "Thank you for your patience.",
-        "Yes, I designed it.",
-        "Yes, I'm developing it.",
+        "I designed this site using Sketch.",
+        "I'm writing all of the code too!",
         "My name is Kristie."
       ],
       typeSpeed: 0,

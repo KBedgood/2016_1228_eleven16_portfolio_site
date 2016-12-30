@@ -63,7 +63,7 @@ body {
 // --------------------------------------------------
 .btn-default {
   color: $color-accent;
-  font-weight: 700;
+  font-weight: 600;
   background-color: $color-accent;
   border: 1px solid white;
   margin-right: 15px;
@@ -76,14 +76,14 @@ body {
   }
 }
 
-.btn-default:hover {
-  color: $color-accent;
-  background-color: white;
-  border: 1px solid transparent;
-  a {
-    color: $color-accent;
-  }
-}
+// .btn-default:hover {
+//   color: $color-accent;
+//   background-color: white;
+//   border: 1px solid transparent;
+//   a {
+//     color: $color-accent;
+//   }
+// }
 
 navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -102,7 +102,7 @@ a {
 // Main Body Image
 // ----------------------------------------------------------------------------------------------------
 .main-text {
-  padding-right: 44px;
+  padding-right: 94px;
 }
 
 #typedWrapper {
@@ -206,7 +206,7 @@ h4 {
 
 h3 {
   /* Connect.: */
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
   color: #FFFFFF;
 }
@@ -267,7 +267,7 @@ h3 {
 
 .cred-title {
   /* Print + Packaging De: */
-  font-weight: 700;
+  font-weight: 600;
   font-size: 21px;
   color: #FFFFFF;
   margin-top: 22px;
@@ -276,7 +276,7 @@ h3 {
 
 .institute {
   /* The Iron Yard Front-: */
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   color: #FFFFFF;
   line-height: 26px;

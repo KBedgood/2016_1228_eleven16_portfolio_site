@@ -1,0 +1,248 @@
+@charset "UTF-8";
+body {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: white;
+  background-color: #4A4A4A; }
+
+.background-image {
+  background: url("/images/dandelion_adobeStock_30141593_v5.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  overflow: hidden;
+  height: 812px; }
+
+.navbar-default {
+  background-color: #007D8B; }
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 0px; }
+
+.navbar-brand > img {
+  display: block;
+  max-width: 45%;
+  margin-top: -9px;
+  margin-left: 8px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #007D8B;
+  background-color: white; }
+
+.btn-default {
+  color: white;
+  font-weight: 700;
+  background-color: #007D8B;
+  border-color: white;
+  border-width: 2 px; }
+  .btn-default:hover {
+    color: #007D8B;
+    background-color: white;
+    border-color: none; }
+
+.btn-default:hover {
+  color: #007D8B;
+  background-color: white;
+  border-color: none; }
+
+navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: none; }
+
+.main-text {
+  padding-right: 44px; }
+
+#typedWrapper {
+  font-family: AvenirNext-Regular;
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 21px; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Hello Universe.: */
+h1 {
+  font-family: AvenirNext-Regular;
+  font-size: 48px;
+  color: #FFFFFF;
+  margin-top: 90px; }
+
+/* My name is Kristie.: */
+h2 {
+  font-family: AvenirNext-Regular;
+  font-size: 28px;
+  color: #FFFFFF; }
+
+/* I offer you 20+ year: */
+h4 {
+  font-family: AvenirNext-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 26px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+
+/* Button Rectangle 5: */
+.connect-kb {
+  background: #007D8B;
+  border-radius: 8px; }
+
+/* Connect.: */
+h3 {
+  font-family: AvenirNext-DemiBold;
+  font-size: 18px;
+  color: #FFFFFF; }
+
+/* I believe if our wish: */
+.dandelion-text {
+  font-family: AvenirNext-Italic;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 23px; }
+
+.web-section {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.web-wrapper {
+  height: 600px;
+  background-color: white; }
+
+.cred-section {
+  margin: 0 auto;
+  background-color: #007D8B; }
+
+.cred-wrapper {
+  text-align: center;
+  margin-top: 67px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 67px; }
+
+.icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+  margin-top: 67px; }
+
+.cred-title {
+  /* Print + Packaging De: */
+  font-family: AvenirNext-DemiBold;
+  font-size: 21px;
+  color: #FFFFFF;
+  margin-top: 22px;
+  text-shadow: none; }
+
+.institute {
+  /* The Iron Yard Front-: */
+  font-family: AvenirNext-DemiBold;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 26px;
+  text-shadow: none; }
+
+.degree {
+  /* The Iron Yard Front-: */
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 26px; }
+
+.street {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 26px; }
+
+.city {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 26px; }
+
+.number {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 26px; }
+
+.fa {
+  /* laptop - FontAwesome: */
+  font-family: FontAwesome;
+  font-size: 44px;
+  color: #FFFFFF;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 20px;
+  margin-top: 23px; }
+
+ul {
+  list-style: none;
+  /* Concept – Executed E: */
+  font-family: AvenirNext-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 30px;
+  text-align: center;
+  padding-left: 0; }
+
+/* paper-plane - FontAwesome: */
+/* MEDIA QUERIES : 917 */
+@media screen and (min-width: 917px) {
+  .navbar-right ~ .navbar-right {
+    /* margin-right: 0; */
+    padding-right: 12px; }
+  .nav > li > a {
+    position: relative;
+    display: block;
+    padding-right: 15px; } }
+
+@media screen and (min-width: 836px) {
+  .nav > li > a {
+    position: relative;
+    display: block;
+    /* padding-right: 15px; */ } }
+
+@media screen and (min-width: 425px) {
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white; } }
+
+/* MEDIA QUERIES : iPad <= 768 */
+/* MEDIA QUERIES : Materialize Breakpoint Mobile Devices <= 600px */
+/* MEDIA QUERIES : iPhone 6plus <= 414 */
+/* MEDIA QUERIES : iPhone 6 <= 375 */

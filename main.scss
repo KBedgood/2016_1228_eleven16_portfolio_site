@@ -12,11 +12,11 @@ body {
 }
 
 .background-image {
-  background: url("../images/dandelion_adobeStock_30141593_v5.jpg");
+  background: url("../images/dandelion_adobeStock_30141593_v6.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: white;
-  background-size: cover;
+  // background-size: cover;
   overflow: hidden;
   height: 884px;
   margin-top: 27px;
@@ -41,7 +41,7 @@ body {
 .navbar-brand > img {
   display: block;
   max-width: 45%;
-  margin-top: -9px;
+  margin-top: -10px;
   margin-left: 8px;
 }
 
@@ -190,7 +190,7 @@ h4 {
 
 .connect-kb {
   /* Button Rectangle 5: */
-  background: #007D8B;
+  background: $color-accent;
   border-radius: 8px;
   border: none;
   width: 176px;
@@ -459,8 +459,8 @@ img {
     padding-left: 22px;
   }
   .background-image {
-  margin-top: 49px;
-}
+    margin-top: 49px;
+  }
   h1 {
     font-size: 26px;
     color: #ddd;
@@ -477,12 +477,12 @@ img {
     color: #ddd;
     margin-bottom: 21px;
   }
-  .navbar-brand > img {
-    display: block;
-    max-width: 50%;
-    margin-top: -57px;
-    margin-left: 0px;
-  }
+  // .navbar-brand > img {
+  //   display: block;
+  //   max-width: 50%;
+  //   margin-top: -57px;
+  //   margin-left: 0px;
+  // }
   .navbar-default .navbar-toggle {
     background-color: white;
   }
@@ -508,7 +508,7 @@ img {
     margin-top: 3px;
   }
   .connect-kb {
-    background: #007D8B;
+    background: $color-accent;
     border-radius: 8px;
     border: none;
     width: 120px;

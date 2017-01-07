@@ -7,17 +7,16 @@ body {
   background-color: #4A4A4A; }
 
 .background-image {
-  background: url("../images/dandelion_adobeStock_30141593_v5.jpg");
+  background: url("../images/dandelion_adobeStock_30141593_v6.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: white;
-  background-size: cover;
   overflow: hidden;
   height: 884px;
   margin-top: 27px; }
 
 .navbar-default {
-  background-color: #007D8B; }
+  background-color: #73477A; }
 
 .navbar-fixed-top {
   top: 0;
@@ -27,7 +26,7 @@ body {
 .navbar-brand > img {
   display: block;
   max-width: 45%;
-  margin-top: -9px;
+  margin-top: -10px;
   margin-left: 8px; }
 
 .navbar-default .navbar-nav > li > a {
@@ -35,13 +34,13 @@ body {
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #007D8B;
+  color: #73477A;
   background-color: white; }
 
 .btn-default {
-  color: #007D8B;
+  color: #73477A;
   font-weight: 600;
-  background-color: #007D8B;
+  background-color: #73477A;
   border: 1px solid white;
   margin-right: 15px; }
   .btn-default:hover, .btn-default:active {
@@ -124,7 +123,7 @@ h4 {
 
 .connect-kb {
   /* Button Rectangle 5: */
-  background: #007D8B;
+  background: #73477A;
   border-radius: 8px;
   border: none;
   width: 176px;
@@ -161,7 +160,7 @@ h3 {
 
 .cred-section {
   margin: 0 auto;
-  background-color: #007D8B;
+  background-color: #73477A;
   padding-right: 15%;
   padding-left: 15%; }
 
@@ -334,11 +333,6 @@ img {
     font-size: 17px;
     color: #ddd;
     margin-bottom: 21px; }
-  .navbar-brand > img {
-    display: block;
-    max-width: 50%;
-    margin-top: -57px;
-    margin-left: 0px; }
   .navbar-default .navbar-toggle {
     background-color: white; }
   .brand-title {
@@ -358,7 +352,7 @@ img {
     color: #ddd;
     margin-top: 3px; }
   .connect-kb {
-    background: #007D8B;
+    background: #73477A;
     border-radius: 8px;
     border: none;
     width: 120px;

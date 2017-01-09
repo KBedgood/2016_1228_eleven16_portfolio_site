@@ -1,633 +1,538 @@
-@import '_variables.scss';
-// ----------------------------------------------------------------------------------------------------
-// Global Styles
-// ----------------------------------------------------------------------------------------------------
-body {
-  font-family: 'Open Sans', sans-serif;
-  // 400,400i,600,700
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4em;
-  color: white;
-  background-color: $color-darkGrey;
-}
-
-.background-image {
-  background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-color: white;
-  background-size: cover !important;
-  overflow: hidden;
-  margin-top: 20px !important;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Navigation
-// ----------------------------------------------------------------------------------------------------
-.navbar-default {
-  background-color: $color-accent;
-}
-
-.navbar-fixed-top {
-  top: 0;
-  border-width: 0 0 1px;
-  border-bottom-color: white;
-}
-
-// --------------------------------------------------
-// Navigation : Logo
-// --------------------------------------------------
-.navbar-brand > img {
-  display: block;
-  max-width: 45%;
-  margin-top: -10px;
-  margin-left: 8px;
-}
-
-// --------------------------------------------------
-// Navigation : Links
-// --------------------------------------------------
-.navbar-default .navbar-nav>li>a {
-  color: white;
-}
-
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-  color: $color-accent;
-  background-color: white;
-}
-
-// --------------------------------------------------
-// Navigation : Button
-// --------------------------------------------------
-.btn-default {
-  color: $color-accent;
-  font-weight: 600;
-  background-color: $color-accent;
-  border: 1px solid white;
-  margin-right: 15px;
-  &:hover,
-  &:active {
-    color: white;
-    background-color: white;
-    border-color: none;
-    text-decoration: none;
-  }
-}
-
-// .btn-default:hover {
-//   color: $color-accent;
-//   background-color: white;
-//   border: 1px solid transparent;
-//   a {
-//     color: $color-accent;
-//   }
-// }
-navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Main Body Image
-// ----------------------------------------------------------------------------------------------------
-.main-text {
-  padding-right: 94px;
-}
-
-#typedWrapper {
-  font-size: 28px;
-  color: #FFFFFF;
-  margin-bottom: 21px;
-}
-
-.text-two {
-  margin-top: 16px;
-}
-
-// --------------------------------------------------
-// Typed.js Animated Blinking Cursor
-// --------------------------------------------------
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-// --------------------------------------------------
-// Main Intro
-// --------------------------------------------------
-h1 {
-  /* Hello Universe.: */
-  font-size: 48px;
-  color: #FFFFFF;
-  margin-top: 90px;
-}
-
-.intro-text {
-  margin-top: 13px;
-  padding-right: 62px;
-}
-
-h2 {
-  /* My name is Kristie.: */
-  font-size: 28px;
-  color: #FFFFFF;
-}
-
-h4 {
-  /* I offer you 20+ year: */
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-  text-shadow: 0;
-}
-
-.connect-kb {
-  /* Button Rectangle 5: */
-  background: $color-accent;
-  border-radius: 8px;
-  border: none;
-  width: 176px;
-  margin-top: 7px;
-}
-
-.connect-buttontext {
-  font-size: 18px;
-  color: #FFFFFF;
-  margin-top: 12px;
-}
-
-h3 {
-  /* Connect.: */
-  font-weight: 600;
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.dandelion-text {
-  /* I believe if our wish: */
-  font-size: 12px;
-  color: #FFFFFF;
-  line-height: 23px;
-  margin-top: 37px;
-}
-
-.unicorn {
-  margin-top: 60px;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Web Section Dev Portfolio
-// ----------------------------------------------------------------------------------------------------
-.web-dev {
-  background-color: white;
-}
-
-.web-section {
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: white;
-}
-
-.web-wrapper {
-  height: 600px;
-  background-color: white;
-}
-
-.images-Container {
-  padding: 40px 0px;
-  background-color: white;
-}
-
-.images-Container .dev-Image:hover {
-  background-color: $color-accent;
-}
-
-.images-Container .dev-Image:hover .image {
-  opacity: .5;
-}
-
-.images-Container .image {
-  height: 380px;
-  padding: 10px 30px;
-  position: relative;
-}
-
-.images-Container .image h3 {
-  width: 30%;
-  position: absolute;
-  bottom: 20px;
-  font-size: 26px;
-  left: 30px;
-  line-height: 1.5em;
-}
-
-.images-Container .img1 {
-  background-image: url(../images/weatherApp-01.jpg);
-  background-size: cover;
-}
-
-.images-Container .img2 {
-  background-image: url(../images/weatherApp-01.jpg);
-  background-size: cover;
-}
-
-.images-Container .img3 {
-  background-image: url(../images/weatherApp-01.jpg);
-  background-size: cover;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Skills + Education
-// ----------------------------------------------------------------------------------------------------
-.cred-section {
-  margin: 0 auto;
-  background-color: $color-accent;
-  padding-right: 15%;
-  padding-left: 15%;
-}
-
-.cred-wrapper {
-  text-align: center;
-  margin-top: 67px;
-  margin: 0 auto;
-  margin-bottom: 67px;
-}
-
-.icon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  background: transparent;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 2px solid white;
-  margin-top: 67px;
-}
-
-.cred-title {
-  /* Print + Packaging De: */
-  font-weight: 600;
-  font-size: 21px;
-  color: #FFFFFF;
-  margin-top: 22px;
-  text-shadow: none;
-}
-
-.institute {
-  /* The Iron Yard Front-: */
-  font-weight: 600;
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-  text-shadow: none;
-  text-decoration: underline;
-}
-
-.degree {
-  /* The Iron Yard Front-: */
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.street {
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.city {
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.number {
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.fa {
-  /* laptop - FontAwesome: */
-  font-family: FontAwesome;
-  font-size: 44px;
-  color: #FFFFFF;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 20px;
-  margin-top: 23px;
-}
-
-ul {
-  list-style: none;
-  /* Concept – Executed E: */
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 30px;
-  text-align: center;
-  padding-left: 0;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Brand Experience
-// ----------------------------------------------------------------------------------------------------
-.brand-section {
-  padding: 0px 15%;
-}
-
-.brand-text {
-  text-align: center;
-  margin-top: -20px;
-}
-
-h2.brand-sub {
-  /* Abbrvtd. Collection: */
-  font-size: 28px;
-  color: #9B9B9B;
-  margin-top: 3px;
-}
-
-p.brand-description {
-  /* I offer you 20+ year: */
-  font-size: 14px;
-  color: #9B9B9B;
-  line-height: 26px;
-  padding-bottom: 13px;
-}
-
-.brand-title {
-  /* Brand Experience: */
-  font-size: 48px;
-  color: #9B9B9B;
-}
-
-img {
-  max-width: 85%;
-  margin-top: 20px;
-}
-
-.pantene {
-  margin-top: -29px;
-}
-
-.rejoice {
-  margin-top: 35px;
-}
-
-.saralee {
-  margin-top: -8px;
-}
-
-.gillette {
-  margin-top: 13px;
-}
-
-.herbalessences {
-  margin-top: -5px;
-}
-
-.eukanuba {
-  margin-top: 12px;
-}
-
-.olay {
-  margin-top: 4px;
-}
-
-.hershey {
-  margin-top: 11px;
-}
-
-.sofit {
-  margin-top: -21px;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Print Design Portfolio
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Penny
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Footer
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Footer
-// ----------------------------------------------------------------------------------------------------
-
-/* paper-plane - FontAwesome: */
-
-// font-family: FontAwesome;
-// font-size: 18px;
-// color: #FFFFFF;
-// ----------------------------------------------------------------------------------------------------
-// Responsive Styles
-// ----------------------------------------------------------------------------------------------------
-// @import '_responsive.scss';
-// --------------------------------------------------
-// MEDIA QUERIES : 917 */
-// --------------------------------------------------
-// @media screen and (min-width: 917px) {
-//   .navbar-right~.navbar-right {
-//     /* margin-right: 0; */
-//     padding-right: 12px;
-//   }
-//   .nav>li>a {
-//     position: relative;
-//     display: block;
-//     padding-right: 15px;
-//   }
-// }
-
-@media screen and (max-width: 917px) {
-  .background-image {
-    background-size: cover !important;
-    // Mobile image 
-    background: url("../images/dandelion_adobeStock_30141593_v6_mobile.jpg");
-  }
-  .text-one {
-    display: none !important;
-  }
-  .text-two {
-    display: none !important;
-  }
-}
-
-// // --------------------------------------------------
-// // MEDIA QUERIES : 836 */
-// // --------------------------------------------------
-// @media screen and (min-width: 836px) {
-//   .nav>li>a {
-//     position: relative;
-//     display: block;
-//     /* padding-right: 15px; */
-//   }
-// }
-
-// // --------------------------------------------------
-// // MEDIA QUERIES : 425 */
-// // --------------------------------------------------
-// @media screen and (min-width: 425px) {
-//   .navbar-default .navbar-toggle .icon-bar {
-//     background-color: white;
-//   }
-//   ul {
-//     list-style: none;
-//     font-size: 14px;
-//     color: #FFFFFF;
-//     line-height: 35px;
-//     text-align: center;
-//     padding-left: 0;
-//     margin-top: 12px;
-//   }
-//   .background-image {
-//     background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
-//     background-size: 100% 100%;
-//     background-repeat: no-repeat;
-//     background-color: white;
-//     background-size: contain;
-//     overflow: hidden;
-//     margin-top: 100px !important;
-//   }
-// }
-
-// // --------------------------------------------------
-// // MEDIA QUERIES : 320 */
-// // --------------------------------------------------
-// @media screen and (min-width: 320px) {
-//   .main-text {
-//     padding-right: 22px;
-//     padding-left: 22px;
-//   }
-//   .background-image {
-//     margin-top: 89px;
-//     max-height: 500px;
-//   }
-//   h1 {
-//     font-size: 26px;
-//     color: #ddd;
-//     margin-top: 136px;
-//   }
-//   h4 {
-//     font-size: 14px;
-//     color: #ddd;
-//     line-height: 35px;
-//     text-shadow: 0;
-//   }
-//   #typedWrapper {
-//     font-size: 17px;
-//     color: #ddd;
-//     margin-bottom: 21px;
-//   }
-//   // .navbar-brand > img {
-//   //   display: block;
-//   //   max-width: 50%;
-//   //   margin-top: -57px;
-//   //   margin-left: 0px;
-//   // }
-//   .navbar-default .navbar-toggle {
-//     background-color: white;
-//   }
-//   .brand-title {
-//     font-size: 24px;
-//     color: #ddd;
-//   }
-//   h2 {
-//     font-size: 17px;
-//     color: #ddd;
-//   }
-//   p.brand-description {
-//     font-size: 14px;
-//     color: #ddd;
-//     line-height: 28px;
-//     padding-bottom: 13px;
-//   }
-//   .unicorn {
-//     margin-top: 28px;
-//   }
-//   .connect-buttontext {
-//     font-size: 17px;
-//     color: #ddd;
-//     margin-top: 12px;
-//   }
-//   h2.brand-sub {
-//     font-size: 18px;
-//     color: #ddd;
-//     margin-top: 3px;
-//   }
-//   .connect-kb {
-//     background: $color-accent;
-//     border-radius: 8px;
-//     border: none;
-//     width: 120px;
-//     margin-top: 11px;
-//   }
-//   p.brand-description {
-//     font-size: 12px;
-//     color: #ddd;
-//     line-height: 26px;
-//     padding-bottom: 13px;
-//   }
-// }
-
-
-/* MEDIA QUERIES : iPad <= 768 */
-
-
-/* MEDIA QUERIES : Materialize Breakpoint Mobile Devices <= 600px */
-
-
-/* MEDIA QUERIES : iPhone 6plus <= 414 */
-
-
-/* MEDIA QUERIES : iPhone 6 <= 375 */
+      @import '_variables.scss';
+    // ----------------------------------------------------------------------------------------------------
+    // Global Styles
+    // ----------------------------------------------------------------------------------------------------
+    body {
+      font-family: 'Open Sans', sans-serif;
+      // 400,400i,600,700
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4em;
+      color: white;
+      background-color: white;
+    }
+    
+    .background-image {
+      background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-color: white;
+      overflow: hidden;
+      margin-top: 20px !important;
+    }
+    
+    // ----------------------------------------------------------------------------------------------------
+    // Navigation
+    // ----------------------------------------------------------------------------------------------------
+    .navbar-default {
+      background-color: $color-accent;
+    }
+    
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+      border-bottom-color: white;
+    }
+    
+    // --------------------------------------------------
+    // Navigation : Logo
+    // --------------------------------------------------
+    .navbar-brand > img {
+      display: block;
+      max-width: 45%;
+      margin-top: -10px;
+      margin-left: 8px;
+    }
+    
+    // --------------------------------------------------
+    // Navigation : Links
+    // --------------------------------------------------
+    .navbar-default .navbar-nav>li>a {
+      color: white;
+    }
+    
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover {
+      color: $color-accent;
+      background-color: white;
+    }
+    
+    // --------------------------------------------------
+    // Navigation : Button
+    // --------------------------------------------------
+    .btn-default {
+      color: $color-accent;
+      font-weight: 600;
+      background-color: $color-accent;
+      border: 1px solid white;
+      margin-right: 15px;
+      &:hover,
+      &:active {
+        color: white;
+        background-color: white;
+        border-color: none;
+        text-decoration: none;
+      }
+    }
+    
+    // .btn-default:hover {
+    //   color: $color-accent;
+    //   background-color: white;
+    //   border: 1px solid transparent;
+    //   a {
+    //     color: $color-accent;
+    //   }
+    // }
+    navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+      border-color: none;
+    }
+    
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    
+    // ----------------------------------------------------------------------------------------------------
+    // Main Body Image
+    // ----------------------------------------------------------------------------------------------------
+    .main-text {
+      padding-right: 94px;
+    }
+    
+    .landing-image {
+      height: 900px;
+    }
+    
+    #typedWrapper {
+      font-size: 28px;
+      color: #FFFFFF;
+      margin-bottom: 21px;
+    }
+    
+    .text-two {
+      margin-top: 16px;
+    }
+    
+    // --------------------------------------------------
+    // Typed.js Animated Blinking Cursor
+    // --------------------------------------------------
+    .typed-cursor {
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+    }
+    
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @-moz-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    // --------------------------------------------------
+    // Main Intro
+    // --------------------------------------------------
+    h1 {
+      /* Hello Universe.: */
+      font-size: 48px;
+      color: #FFFFFF;
+      margin-top: 90px;
+    }
+    
+    .intro-text {
+      margin-top: 13px;
+      padding-right: 62px;
+    }
+    
+    h2 {
+      /* My name is Kristie.: */
+      font-size: 28px;
+      color: #FFFFFF;
+    }
+    
+    h4 {
+      /* I offer you 20+ year: */
+      font-size: 14px;
+      color: #FFFFFF;
+      line-height: 26px;
+      text-shadow: 0;
+    }
+    
+    .connect-kb {
+      /* Button Rectangle 5: */
+      background: $color-accent;
+      border-radius: 8px;
+      border: none;
+      width: 176px;
+      margin-top: 7px;
+    }
+    
+    .connect-buttontext {
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-top: 12px;
+    }
+    
+    h3 {
+      /* Connect.: */
+      font-weight: 600;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    
+    .dandelion-text {
+      /* I believe if our wish: */
+      font-size: 12px;
+      color: #FFFFFF;
+      line-height: 23px;
+      margin-top: 37px;
+    }
+    
+    .unicorn {
+      margin-top: 60px;
+    }
+    
+    // ----------------------------------------------------------------------------------------------------
+    // Web Section Dev Portfolio
+    // ----------------------------------------------------------------------------------------------------
+    .web-dev {
+      background-color: white;
+    }
+    
+    .web-section {
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: white;
+    }
+    
+    .web-wrapper {
+      height: 600px;
+      background-color: white;
+    }
+    
+    .images-Container {
+      padding: 40px 0px;
+      background-color: white;
+    }
+    
+    .img1 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .images-Container .img1 {
+      background-image: url(../images/weatherApp-01.jpg);
+      background-size: cover;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+    // .images-Container .dev-Image:hover {
+    //   background-color: $color-accent;
+    // }
+    // .images-Container .dev-Image:hover .image {
+    //   opacity: .5;
+    // }
+    .images-Container .image {
+      height: 183px;
+      padding: 10px 30px;
+      position: relative;
+    }
+    
+    .images-Container .image h3 {
+      width: 30%;
+      position: absolute;
+      bottom: 20px;
+      font-size: 26px;
+      left: 30px;
+      line-height: 1.5em;
+    }
+    
+    .images-Container .img1 {
+      background-image: url(../images/weatherApp-01.jpg);
+      background-size: cover;
+    }
+    
+    .images-Container .img2 {
+      background-image: url(../images/kristieglamApp-01.jpg);
+      background-size: cover;
+    }
+    
+    .images-Container .img3 {
+      background-image: url(../images/githubRecreate-01.jpg);
+      background-size: cover;
+    }
+    
+    // Slide in overlay from left
+    .container {
+      position: relative;
+    }
+    
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      :hover .image {}
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $color-accent;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: 1.0s ease;
+      }
+      .container:hover .overlay {
+        width: 100%;
+      }
+      .text {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      .images-Container .image h3 {
+        width: 30%;
+        position: absolute;
+        bottom: 20px;
+        font-size: 18px;
+        left: 30px;
+        line-height: 1.5em;
+      }
+      .dev-Image {
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      // ----------------------------------------------------------------------------------------------------
+      // SECTION : Skills + Education
+      // ----------------------------------------------------------------------------------------------------
+      .cred-section {
+        margin: 0 auto;
+        background-color: $color-accent;
+        padding-right: 15%;
+        padding-left: 15%;
+      }
+      .cred-wrapper {
+        text-align: center;
+        margin-top: 67px;
+        margin: 0 auto;
+        margin-bottom: 67px;
+      }
+      .icon {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        border: 2px solid white;
+        margin-top: 67px;
+      }
+      .cred-title {
+        /* Print + Packaging De: */
+        font-weight: 600;
+        font-size: 21px;
+        color: #FFFFFF;
+        margin-top: 22px;
+        text-shadow: none;
+      }
+      .institute {
+        /* The Iron Yard Front-: */
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 26px;
+        text-shadow: none;
+        text-decoration: underline;
+      }
+      .degree {
+        /* The Iron Yard Front-: */
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 26px;
+      }
+      .street {
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 26px;
+      }
+      .city {
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 26px;
+      }
+      .number {
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 26px;
+      }
+      .fa {
+        /* laptop - FontAwesome: */
+        font-family: FontAwesome;
+        font-size: 44px;
+        color: #FFFFFF;
+        border-color: white;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-top: 23px;
+      }
+      ul {
+        list-style: none;
+        /* Concept – Executed E: */
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 30px;
+        text-align: center;
+        padding-left: 0;
+      }
+      // ----------------------------------------------------------------------------------------------------
+      // SECTION : Brand Experience
+      // ----------------------------------------------------------------------------------------------------
+      #brand {
+        background-color: $color-darkGrey;
+      }
+      .brand-section {
+        padding: 0px 15%;
+      }
+      .brand-text {
+        text-align: center;
+        margin-top: -20px;
+      }
+      h2.brand-sub {
+        /* Abbrvtd. Collection: */
+        font-size: 28px;
+        color: #9B9B9B;
+        margin-top: 3px;
+      }
+      p.brand-description {
+        /* I offer you 20+ year: */
+        font-size: 14px;
+        color: #9B9B9B;
+        line-height: 26px;
+        padding-bottom: 13px;
+      }
+      .brand-title {
+        /* Brand Experience: */
+        font-size: 48px;
+        color: #9B9B9B;
+      }
+      img {
+        max-width: 85%;
+        margin-top: 20px;
+      }
+      .pantene {
+        margin-top: -29px;
+      }
+      .rejoice {
+        margin-top: 35px;
+      }
+      .saralee {
+        margin-top: -8px;
+      }
+      .gillette {
+        margin-top: 13px;
+      }
+      .herbalessences {
+        margin-top: -5px;
+      }
+      .eukanuba {
+        margin-top: 12px;
+      }
+      .olay {
+        margin-top: 4px;
+      }
+      .hershey {
+        margin-top: 11px;
+      }
+      .sofit {
+        margin-top: -21px;
+      }
+      // ----------------------------------------------------------------------------------------------------
+      // SECTION : Print Design Portfolio
+      // ----------------------------------------------------------------------------------------------------
+      // ----------------------------------------------------------------------------------------------------
+      // SECTION : Penny
+      // ----------------------------------------------------------------------------------------------------
+      // ----------------------------------------------------------------------------------------------------
+      // SECTION : Footer
+      // ----------------------------------------------------------------------------------------------------
+      // ----------------------------------------------------------------------------------------------------
+      // SECTION : Footer
+      // ----------------------------------------------------------------------------------------------------
+      // ----------------------------------------------------------------------------------------------------
+      // Responsive Styles
+      // ----------------------------------------------------------------------------------------------------
+      // --------------------------------------------------
+      // MEDIA QUERIES : 917 */
+      // --------------------------------------------------
+      @media screen and (max-width: 917px) {
+        .background-image {
+          background-image: url("../images/dandelion_adobeStock_30141593_v6_mobile.jpg") !important;
+          background-position: 60% center;
+          background-size: cover !important;
+        }
+        // Hides main text
+        .text-one {
+          display: none !important;
+        }
+        .text-two {
+          display: none !important;
+        }
+        // Reformatting text 
+        h1 {
+          font-size: 28px;
+          margin-top: 170px;
+        }
+        h2 {
+          font-size: 28px;
+        }
+        #typedWrapper {
+          font-size: 18px;
+          margin-bottom: 21px;
+        }
+        .dev-Image {
+          margin-bottom: 15px;
+        }
+      }

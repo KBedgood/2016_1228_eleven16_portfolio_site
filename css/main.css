@@ -2,18 +2,19 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.4em;
   color: white;
   background-color: #4A4A4A; }
 
 .background-image {
-  background: url("../images/dandelion_adobeStock_30141593_v6.jpg");
+  background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: white;
+  background-size: cover !important;
   overflow: hidden;
-  height: 884px;
-  margin-top: 27px; }
+  margin-top: 20px !important; }
 
 .navbar-default {
   background-color: #73477A; }
@@ -107,7 +108,8 @@ h1 {
   margin-top: 90px; }
 
 .intro-text {
-  margin-top: 13px; }
+  margin-top: 13px;
+  padding-right: 62px; }
 
 h2 {
   /* My name is Kristie.: */
@@ -150,13 +152,52 @@ h3 {
 .unicorn {
   margin-top: 60px; }
 
+.web-dev {
+  background-color: white; }
+
 .web-section {
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  background-color: white; }
 
 .web-wrapper {
   height: 600px;
   background-color: white; }
+
+.images-Container {
+  padding: 40px 0px;
+  background-color: white; }
+
+.images-Container .dev-Image:hover {
+  background-color: #73477A; }
+
+.images-Container .dev-Image:hover .image {
+  opacity: .5; }
+
+.images-Container .image {
+  height: 380px;
+  padding: 10px 30px;
+  position: relative; }
+
+.images-Container .image h3 {
+  width: 30%;
+  position: absolute;
+  bottom: 20px;
+  font-size: 26px;
+  left: 30px;
+  line-height: 1.5em; }
+
+.images-Container .img1 {
+  background-image: url(../images/weatherApp-01.jpg);
+  background-size: cover; }
+
+.images-Container .img2 {
+  background-image: url(../images/weatherApp-01.jpg);
+  background-size: cover; }
+
+.images-Container .img3 {
+  background-image: url(../images/weatherApp-01.jpg);
+  background-size: cover; }
 
 .cred-section {
   margin: 0 auto;
@@ -195,7 +236,8 @@ h3 {
   font-size: 14px;
   color: #FFFFFF;
   line-height: 26px;
-  text-shadow: none; }
+  text-shadow: none;
+  text-decoration: underline; }
 
 .degree {
   /* The Iron Yard Front-: */
@@ -294,7 +336,6 @@ img {
   margin-top: -21px; }
 
 /* paper-plane - FontAwesome: */
-/* MEDIA QUERIES : 917 */
 @media screen and (min-width: 917px) {
   .navbar-right ~ .navbar-right {
     /* margin-right: 0; */
@@ -312,22 +353,39 @@ img {
 
 @media screen and (min-width: 425px) {
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: white; } }
+    background-color: white; }
+  ul {
+    list-style: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 35px;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 12px; }
+  .background-image {
+    background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 100px !important; } }
 
 @media screen and (min-width: 320px) {
   .main-text {
     padding-right: 22px;
     padding-left: 22px; }
   .background-image {
-    margin-top: 49px; }
+    margin-top: 89px;
+    max-height: 500px; }
   h1 {
     font-size: 26px;
     color: #ddd;
     margin-top: 136px; }
   h4 {
-    font-size: 12px;
+    font-size: 14px;
     color: #ddd;
-    line-height: 26px;
+    line-height: 35px;
     text-shadow: 0; }
   #typedWrapper {
     font-size: 17px;
@@ -341,6 +399,11 @@ img {
   h2 {
     font-size: 17px;
     color: #ddd; }
+  p.brand-description {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 28px;
+    padding-bottom: 13px; }
   .unicorn {
     margin-top: 28px; }
   .connect-buttontext {

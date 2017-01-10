@@ -187,11 +187,11 @@ h3 {
   background-size: cover; }
 
 .images-Container .img4 {
-  background-image: url(../images/weatherApp-01.jpg);
+  background-image: url("../images/weatherApp-01.jpg");
   background-size: cover; }
 
 .images-Container .img5 {
-  background-image: url(../images/kristieglamApp-01.jpg);
+  background-image: url("../images/kristieglamApp-01.jpg");
   background-size: cover; }
 
 .images-Container .img6 {
@@ -207,19 +207,20 @@ h3 {
   height: auto;
   margin-bottom: 15px;
   margin-top: 15px; }
+  .image:hover .overlay {
+    width: 100%; }
   .image .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #73477A;
+    background-color: rgba(74, 74, 74, 0.9);
     overflow: hidden;
     width: 0;
     height: 100%;
     transition: 1.0s ease; }
-
-.container:hover .overlay {
-  width: 100%; }
+    .image .overlay .text-overlay {
+      width: 300px; }
 
 .text {
   white-space: nowrap;
@@ -379,14 +380,39 @@ img {
 .sofit {
   margin-top: -21px; }
 
+.sign-off {
+  background-color: #73477A; }
+
+.icon-footer .fa {
+  font-family: FontAwesome;
+  font-size: 18px;
+  color: #FFFFFF;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-bottom: 23px;
+  float: right; }
+
+.fa-paper-plane {
+  font-size: 15px !important; }
+
+.footer-logo {
+  margin-top: -4px !important; }
+
 @media screen and (max-width: 917px) {
   .background-image {
-    background-image: url("../images/dandelion_adobeStock_30141593_v6_mobile.jpg") !important;
+    background-image: url("../images/dandelion_mobile.jpg") !important;
     background-position: 60% center;
     background-size: cover !important; }
+  .navbar-form button {
+    margin: 0px auto;
+    display: block; }
   .navbar-brand > img {
     max-width: 67%;
     margin-top: -46px; }
+  .footer-unit {
+    display: none; }
   .text-one {
     display: none !important; }
   .text-two {
@@ -417,4 +443,13 @@ img {
     background-color: white;
     background-image: none;
     /* border: 1px solid transparent; */
-    border-radius: 4px; } }
+    border-radius: 4px; }
+  img {
+    max-width: 68%;
+    margin-top: 10px; }
+  .icon-footer .fa {
+    padding-right: 31px; }
+  .brand-title {
+    font-size: 42px;
+    color: #9B9B9B;
+    margin-top: 69px; } }

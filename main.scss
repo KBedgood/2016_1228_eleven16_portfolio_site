@@ -269,12 +269,12 @@ h3 {
 }
 
 .images-Container .img4 {
-  background-image: url(../images/weatherApp-01.jpg);
+  background-image: url('../images/weatherApp-01.jpg');
   background-size: cover;
 }
 
 .images-Container .img5 {
-  background-image: url(../images/kristieglamApp-01.jpg);
+  background-image: url('../images/kristieglamApp-01.jpg');
   background-size: cover;
 }
 
@@ -294,42 +294,49 @@ h3 {
   height: auto;
   margin-bottom: 15px;
   margin-top: 15px;
-  :hover .image {}
+  &:hover .overlay {
+  width: 100%;
+  }
   .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: $color-accent;
+    background-color: rgba(74, 74, 74, .9);
     overflow: hidden;
     width: 0;
     height: 100%;
     transition: 1.0s ease;
+
+    .text-overlay {
+      width:300px;
+    }
   }
 }
-  .container:hover .overlay {
-    width: 100%;
-  }
-  .text {
-    white-space: nowrap;
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-  .images-Container .image h3 {
-    width: 30%;
-    position: absolute;
-    bottom: 20px;
-    font-size: 18px;
-    left: 30px;
-    line-height: 1.5em;
-  }
 
+
+
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.images-Container .image h3 {
+  width: 30%;
+  position: absolute;
+  bottom: 20px;
+  font-size: 18px;
+  left: 30px;
+  line-height: 1.5em;
+}
 
 // ----------------------------------------------------------------------------------------------------
 // SECTION : Skills + Education
@@ -515,6 +522,30 @@ img {
 // ----------------------------------------------------------------------------------------------------
 // SECTION : Footer
 // ----------------------------------------------------------------------------------------------------
+.sign-off {
+  background-color: $color-accent;
+}
+
+.icon-footer .fa {
+  font-family: FontAwesome;
+  font-size: 18px;
+  color: #FFFFFF;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-bottom: 23px;
+  float: right;
+}
+
+.fa-paper-plane {
+  font-size: 15px !important;
+}
+
+.footer-logo {
+  margin-top: -4px !important;
+}
+
 // ----------------------------------------------------------------------------------------------------
 // Responsive Styles
 // ----------------------------------------------------------------------------------------------------
@@ -523,16 +554,23 @@ img {
 // --------------------------------------------------
 @media screen and (max-width: 917px) {
   .background-image {
-    background-image: url("../images/dandelion_adobeStock_30141593_v6_mobile.jpg") !important;
+    background-image: url("../images/dandelion_mobile.jpg") !important;
     background-position: 60% center;
     background-size: cover !important;
   }
-// logo
-.navbar-brand > img {
+
+  .navbar-form button {
+    margin:0px auto;
+    display:block;
+  }
+  // logo
+  .navbar-brand > img {
     max-width: 67%;
     margin-top: -46px;
-}
-
+  }
+  .footer-unit {
+    display: none;
+  }
   // Hides main text
   .text-one {
     display: none !important;
@@ -555,19 +593,15 @@ img {
   .dev-Image {
     margin-bottom: 15px;
   }
-
   .icon {
-        border: 4px solid white;
+    border: 4px solid white;
   }
-
   .navbar-default .navbar-toggle .icon-bar {
     background-color: $color-accent;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-}
-
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
   .navbar-toggle {
     position: relative;
     float: right;
@@ -579,5 +613,17 @@ img {
     background-image: none;
     /* border: 1px solid transparent; */
     border-radius: 4px;
-}
+  }
+  img {
+    max-width: 68%;
+    margin-top: 10px;
+  }
+  .icon-footer .fa {
+    padding-right: 31px;
+  }
+  .brand-title {
+    font-size: 42px;
+    color: #9B9B9B;
+    margin-top: 69px;
+  }
 }

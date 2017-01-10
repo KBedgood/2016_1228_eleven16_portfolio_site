@@ -5,10 +5,11 @@ $(document).ready(function() {
   $(function() {
     $(".typedKB").typed({
       strings: [
-        "This site is under construction.",
-        "Thank you for your patience.",
+        "I'm a graphic designer.",
+        "I'm a front-end developer.",
+        "I'm a print production artist.",
         "I designed this site using Sketch.",
-        "I'm writing all of the code too!",
+        "I am writing the code for it too.",
         "My name is Kristie."
       ],
       typeSpeed: 0,

@@ -295,7 +295,7 @@ h3 {
   margin-bottom: 15px;
   margin-top: 15px;
   &:hover .overlay {
-  width: 100%;
+    width: 100%;
   }
   .overlay {
     position: absolute;
@@ -307,15 +307,11 @@ h3 {
     width: 0;
     height: 100%;
     transition: 1.0s ease;
-
     .text-overlay {
-      width:300px;
+      width: 300px;
     }
   }
 }
-
-
-
 
 .text {
   white-space: nowrap;
@@ -554,14 +550,18 @@ img {
 // --------------------------------------------------
 @media screen and (max-width: 917px) {
   .background-image {
-    background-image: url("../images/dandelion_mobile.jpg") !important;
-    background-position: 60% center;
+    background-image: url(../images/dandelion_mobile.jpg) !important;
     background-size: cover !important;
+    height: 603px;
+    margin-top: 70px !important;
   }
-
   .navbar-form button {
-    margin:0px auto;
-    display:block;
+    margin: 0px auto;
+    display: block;
+  }
+  .main-text {
+    padding-right: 60px;
+    padding-left: 8%;
   }
   // logo
   .navbar-brand > img {
@@ -584,46 +584,73 @@ img {
     margin-top: 170px;
   }
   h2 {
-    font-size: 28px;
-  }
-  #typedWrapper {
     font-size: 18px;
-    margin-bottom: 21px;
+    line-height: 25px;
+    margin-top: 191px;
   }
-  .dev-Image {
-    margin-bottom: 15px;
-  }
-  .icon {
-    border: 4px solid white;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: $color-accent;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: white;
-    background-image: none;
-    /* border: 1px solid transparent; */
-    border-radius: 4px;
-  }
-  img {
-    max-width: 68%;
-    margin-top: 10px;
-  }
-  .icon-footer .fa {
-    padding-right: 31px;
-  }
-  .brand-title {
-    font-size: 42px;
-    color: #9B9B9B;
-    margin-top: 69px;
-  }
+
+.dandelion-text {
+padding-right: 40px;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400i;
 }
+
+
+#typedWrapper {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.dev-Image {
+  margin-bottom: 15px;
+}
+
+.main-text h1 {
+  font-size: 28px;
+  margin-top: 82px;
+}
+
+.icon {
+  border: 4px solid white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $color-accent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: white;
+  background-image: none;
+  /* border: 1px solid transparent; */
+  border-radius: 4px;
+}
+
+img {
+  max-width: 68%;
+  margin-top: 10px;
+}
+
+.icon-footer .fa {
+  padding-right: 31px;
+}
+
+.brand-title {
+  font-size: 42px;
+  color: #9B9B9B;
+  margin-top: 69px;
+}
+}
+
+
+

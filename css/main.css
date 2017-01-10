@@ -402,12 +402,16 @@ img {
 
 @media screen and (max-width: 917px) {
   .background-image {
-    background-image: url("../images/dandelion_mobile.jpg") !important;
-    background-position: 60% center;
-    background-size: cover !important; }
+    background-image: url(../images/dandelion_mobile.jpg) !important;
+    background-size: cover !important;
+    height: 603px;
+    margin-top: 70px !important; }
   .navbar-form button {
     margin: 0px auto;
     display: block; }
+  .main-text {
+    padding-right: 60px;
+    padding-left: 8%; }
   .navbar-brand > img {
     max-width: 67%;
     margin-top: -46px; }
@@ -421,12 +425,22 @@ img {
     font-size: 28px;
     margin-top: 170px; }
   h2 {
-    font-size: 28px; }
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 191px; }
+  .dandelion-text {
+    padding-right: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400i; }
   #typedWrapper {
     font-size: 18px;
-    margin-bottom: 21px; }
+    line-height: 24px; }
   .dev-Image {
     margin-bottom: 15px; }
+  .main-text h1 {
+    font-size: 28px;
+    margin-top: 82px; }
   .icon {
     border: 4px solid white; }
   .navbar-default .navbar-toggle .icon-bar {

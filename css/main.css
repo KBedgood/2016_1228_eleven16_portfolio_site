@@ -9,7 +9,7 @@ body {
 
 .background-image {
   background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
-  background-size: 100% 100%;
+  background-size: 100% 100% !important;
   background-repeat: no-repeat;
   background-color: white;
   overflow: hidden;
@@ -413,8 +413,8 @@ img {
     padding-right: 60px;
     padding-left: 8%; }
   .navbar-brand > img {
-    max-width: 67%;
-    margin-top: -46px; }
+    max-width: 46%;
+    margin-top: -11px; }
   .footer-unit {
     display: none; }
   .text-one {
@@ -443,6 +443,13 @@ img {
     margin-top: 82px; }
   .icon {
     border: 4px solid white; }
+  .connect-kb {
+    background: #73477A;
+    border-radius: 8px;
+    border: none;
+    width: 116px;
+    margin-top: 7px;
+    padding: 10px; }
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #73477A; }
   .navbar-default .navbar-toggle {

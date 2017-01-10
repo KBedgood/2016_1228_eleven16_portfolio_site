@@ -157,15 +157,6 @@ h3 {
 .web-dev {
   background-color: white; }
 
-.web-section {
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: white; }
-
-.web-wrapper {
-  height: 600px;
-  background-color: white; }
-
 .images-Container {
   padding: 40px 0px;
   background-color: white; }
@@ -183,15 +174,27 @@ h3 {
   left: 30px;
   line-height: 1.5em; }
 
-.images-Container .img1 {
+.dev-Image .img1 {
   background-image: url(../images/weatherApp-01.jpg);
   background-size: cover; }
 
 .images-Container .img2 {
-  background-image: url(../images/kristieglamApp-01.jpg);
+  background-image: url(../images/weatherApp-01.jpg);
   background-size: cover; }
 
 .images-Container .img3 {
+  background-image: url(../images/museekApp-01.jpg);
+  background-size: cover; }
+
+.images-Container .img4 {
+  background-image: url(../images/weatherApp-01.jpg);
+  background-size: cover; }
+
+.images-Container .img5 {
+  background-image: url(../images/kristieglamApp-01.jpg);
+  background-size: cover; }
+
+.images-Container .img6 {
   background-image: url(../images/githubRecreate-01.jpg);
   background-size: cover; }
 
@@ -201,20 +204,19 @@ h3 {
 .image {
   display: block;
   width: 100%;
-  height: auto; }
-  .image:hover .image {
-    opacity: .5; }
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #73477A;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 1.0s ease; }
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+  .image .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #73477A;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1.0s ease; }
 
 .container:hover .overlay {
   width: 100%; }
@@ -222,7 +224,7 @@ h3 {
 .text {
   white-space: nowrap;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -379,7 +381,7 @@ img {
 
 @media screen and (max-width: 917px) {
   .background-image {
-    background-image: url("../images/mobile.jpg") !important;
+    background-image: url("../images/dandelion_adobeStock_30141593_v6_mobile.jpg") !important;
     background-position: 60% center;
     background-size: cover !important; }
   .text-one {
@@ -396,8 +398,3 @@ img {
     margin-bottom: 21px; }
   .dev-Image {
     margin-bottom: 15px; } }
-
-/* MEDIA QUERIES : iPad <= 768 */
-/* MEDIA QUERIES : Materialize Breakpoint Mobile Devices <= 600px */
-/* MEDIA QUERIES : iPhone 6plus <= 414 */
-/* MEDIA QUERIES : iPhone 6 <= 375 */

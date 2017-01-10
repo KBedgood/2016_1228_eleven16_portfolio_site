@@ -175,15 +175,15 @@ h3 {
   line-height: 1.5em; }
 
 .dev-Image .img1 {
-  background-image: url(../images/weatherApp-01.jpg);
+  background-image: url("../images/nye513app.jpg");
   background-size: cover; }
 
 .images-Container .img2 {
-  background-image: url(../images/weatherApp-01.jpg);
+  background-image: url("../images/kristieglamApp-01.jpg");
   background-size: cover; }
 
 .images-Container .img3 {
-  background-image: url(../images/museekApp-01.jpg);
+  background-image: url("../images/museekApp-01.jpg");
   background-size: cover; }
 
 .images-Container .img4 {
@@ -191,11 +191,11 @@ h3 {
   background-size: cover; }
 
 .images-Container .img5 {
-  background-image: url("../images/kristieglamApp-01.jpg");
+  background-image: url("../images/holdPleaseApp.jpg");
   background-size: cover; }
 
 .images-Container .img6 {
-  background-image: url(../images/githubRecreate-01.jpg);
+  background-image: url("../images/githubRecreate-01.jpg");
   background-size: cover; }
 
 .container {
@@ -261,7 +261,7 @@ h3 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  border: 2px solid white;
+  border: 3px solid white;
   margin-top: 67px; }
 
 .cred-title {

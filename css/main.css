@@ -9,11 +9,12 @@ body {
 
 .background-image {
   background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
-  background-size: 100% 100% !important;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
   overflow: hidden;
-  margin-top: 20px !important; }
+  margin-top: 20px !important;
+  height: 940px; }
 
 .navbar-default {
   background-color: #73477A; }
@@ -28,6 +29,9 @@ body {
   max-width: 45%;
   margin-top: -10px;
   margin-left: 8px; }
+
+.navbar-header img {
+  margin-top: -10px; }
 
 .navbar-default .navbar-nav > li > a {
   color: white; }
@@ -59,11 +63,13 @@ a {
   a:hover {
     text-decoration: none; }
 
-.main-text {
-  padding-right: 94px; }
+a:focus,
+a:hover {
+  color: grey;
+  text-decoration: underline; }
 
-.landing-image {
-  height: 900px; }
+.main-text {
+  padding-right: 30px; }
 
 #typedWrapper {
   font-size: 28px;
@@ -132,6 +138,8 @@ h4 {
   border: none;
   width: 176px;
   margin-top: 7px; }
+  .connect-kb:hover h3 {
+    color: #462B4A; }
 
 .connect-buttontext {
   font-size: 18px;
@@ -176,27 +184,33 @@ h3 {
 
 .dev-Image .img1 {
   background-image: url("../images/nye513app.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: initial; }
 
 .images-Container .img2 {
   background-image: url("../images/kristieglamApp-01.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: initial; }
 
 .images-Container .img3 {
   background-image: url("../images/museekApp-01.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: initial; }
 
 .images-Container .img4 {
   background-image: url("../images/weatherApp-01.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: initial; }
 
 .images-Container .img5 {
   background-image: url("../images/holdPleaseApp.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: initial; }
 
 .images-Container .img6 {
   background-image: url("../images/githubRecreate-01.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: initial; }
 
 .container {
   position: relative; }
@@ -264,7 +278,7 @@ h3 {
   border: 3px solid white;
   margin-top: 67px; }
 
-.cred-title {
+-foo .cred-title {
   /* Print + Packaging De: */
   font-weight: 600;
   font-size: 21px;
@@ -389,10 +403,16 @@ img {
   color: #FFFFFF;
   border-color: white;
   border-width: 2px;
-  border-radius: 20px;
-  padding-right: 30px;
-  padding-bottom: 23px;
-  float: right; }
+  padding-right: 7px;
+  padding-left: 7px;
+  float: right;
+  border: 2px solid white;
+  border-radius: 81%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 16px; }
 
 .fa-paper-plane {
   font-size: 15px !important; }
@@ -402,25 +422,28 @@ img {
 
 @media screen and (max-width: 917px) {
   .background-image {
-    background-image: url(../images/dandelion_mobile.jpg) !important;
+    background-image: url("../images/dandelion_mobile.jpg") !important;
+    background-position: 60% 0px;
     background-size: cover !important;
-    height: 603px;
-    margin-top: 70px !important; }
+    height: 627px; }
+  .images-Container .image {
+    background-position: center !important; }
+  .background-image {
+    height: auto; }
   .navbar-form button {
     margin: 0px auto;
     display: block; }
-  .main-text {
-    padding-right: 60px;
-    padding-left: 8%; }
+  .navbar-brand {
+    width: 80%; }
+  .navbar-brand > img {
+    max-width: 84%; }
+  .navbar-brand > img {
+    max-width: 84%; }
   .navbar-brand > img {
     max-width: 46%;
     margin-top: -11px; }
   .footer-unit {
     display: none; }
-  .text-one {
-    display: none !important; }
-  .text-two {
-    display: none !important; }
   h1 {
     font-size: 28px;
     margin-top: 170px; }
@@ -468,9 +491,31 @@ img {
   img {
     max-width: 68%;
     margin-top: 10px; }
-  .icon-footer .fa {
+  .icon-footer {
     padding-right: 31px; }
   .brand-title {
     font-size: 42px;
     color: #9B9B9B;
-    margin-top: 69px; } }
+    margin-top: 69px; }
+  .icon-footer {
+    padding-right: 31px;
+    width: 309px;
+    display: block;
+    margin: 0px auto; } }
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+    width: 37%; } }
+
+@media screen and (max-width: 468px) {
+  .navbar-brand > img {
+    max-height: 43px; }
+  .background-image {
+    background-image: url("../images/dandelion_mobile.jpg") !important;
+    background-position: 60% center;
+    background-size: cover !important; }
+  .text-one,
+  .text-two {
+    display: none;
+    height: 165px; } }

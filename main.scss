@@ -12,13 +12,15 @@ body {
   background-color: white;
 }
 
+// Large Image
 .background-image {
   background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
   overflow: hidden;
   margin-top: 20px !important;
+  height: 940px;
 }
 
 // ----------------------------------------------------------------------------------------------------
@@ -42,6 +44,10 @@ body {
   max-width: 45%;
   margin-top: -10px;
   margin-left: 8px;
+}
+
+.navbar-header img {
+  margin-top: -10px
 }
 
 // --------------------------------------------------
@@ -96,15 +102,17 @@ a {
   }
 }
 
+a:focus,
+a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
 // ----------------------------------------------------------------------------------------------------
 // Main Body Image
 // ----------------------------------------------------------------------------------------------------
 .main-text {
-  padding-right: 94px;
-}
-
-.landing-image {
-  height: 900px;
+  padding-right: 30px;
 }
 
 #typedWrapper {
@@ -199,6 +207,11 @@ h4 {
   border: none;
   width: 176px;
   margin-top: 7px;
+  &:hover {
+    h3 {
+      color: #462B4A;
+    }
+  }
 }
 
 .connect-buttontext {
@@ -256,31 +269,37 @@ h3 {
 .dev-Image .img1 {
   background-image: url('../images/nye513app.jpg');
   background-size: cover;
+  background-position: initial;
 }
 
 .images-Container .img2 {
   background-image: url('../images/kristieglamApp-01.jpg');
   background-size: cover;
+  background-position: initial;
 }
 
 .images-Container .img3 {
   background-image: url('../images/museekApp-01.jpg');
   background-size: cover;
+  background-position: initial;
 }
 
 .images-Container .img4 {
   background-image: url('../images/weatherApp-01.jpg');
   background-size: cover;
+  background-position: initial;
 }
 
 .images-Container .img5 {
   background-image: url('../images/holdPleaseApp.jpg');
   background-size: cover;
+  background-position: initial;
 }
 
 .images-Container .img6 {
   background-image: url('../images/githubRecreate-01.jpg');
   background-size: cover;
+  background-position: initial;
 }
 
 // Slide in overlay from left
@@ -295,7 +314,7 @@ h3 {
   margin-bottom: 15px;
   margin-top: 15px;
   &:hover .overlay {
-  width: 100%;
+    width: 100%;
   }
   .overlay {
     position: absolute;
@@ -307,15 +326,11 @@ h3 {
     width: 0;
     height: 100%;
     transition: 1.0s ease;
-
     .text-overlay {
-      width:300px;
+      width: 300px;
     }
   }
 }
-
-
-
 
 .text {
   white-space: nowrap;
@@ -367,7 +382,7 @@ h3 {
   margin-top: 67px;
 }
 
-.cred-title {
+-foo .cred-title {
   /* Print + Packaging De: */
   font-weight: 600;
   font-size: 21px;
@@ -532,10 +547,16 @@ img {
   color: #FFFFFF;
   border-color: white;
   border-width: 2px;
-  border-radius: 20px;
-  padding-right: 30px;
-  padding-bottom: 23px;
+  padding-right: 7px;
+  padding-left: 7px;
   float: right;
+  border: 2px solid white;
+  border-radius: 81%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 16px;
 }
 
 .fa-paper-plane {
@@ -553,31 +574,37 @@ img {
 // MEDIA QUERIES : 917 */
 // --------------------------------------------------
 @media screen and (max-width: 917px) {
+  // Medium Image
   .background-image {
     background-image: url("../images/dandelion_mobile.jpg") !important;
-    background-position: 60% center;
+    background-position: 60% 0px;
     background-size: cover !important;
+    height: 627px;
   }
-
+  .images-Container .image {
+    background-position: center !important;
+  }
+  .background-image {
+    height: auto;
+  }
+  .unicorn {}
   .navbar-form button {
-    margin:0px auto;
-    display:block;
+    margin: 0px auto;
+    display: block;
   }
-  // logo
+  .navbar-brand {
+    width: 80%;
+  }
   .navbar-brand > img {
-    max-width: 67%;
-    margin-top: -46px;
+    max-width: 84%;
+  }
+  .navbar-brand > img {
+    max-width: 84%;
   }
   .footer-unit {
     display: none;
   }
   // Hides main text
-  .text-one {
-    display: none !important;
-  }
-  .text-two {
-    display: none !important;
-  }
   // Reformatting text 
   h1 {
     font-size: 28px;
@@ -618,12 +645,51 @@ img {
     max-width: 68%;
     margin-top: 10px;
   }
-  .icon-footer .fa {
+  .icon-footer {
     padding-right: 31px;
   }
   .brand-title {
     font-size: 42px;
     color: #9B9B9B;
     margin-top: 69px;
+  }
+  .icon-footer {
+    padding-right: 31px;
+    width: 309px;
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+    // margin-top: 0px;
+    width: 37%;
+    img {
+      //margin-top:0;
+    }
+  }
+}
+
+// --------------------------------------------------
+// MEDIA QUERIES : 468 */
+// --------------------------------------------------
+@media screen and (max-width: 468px) {
+  .navbar-brand > img {
+    //margin-top: -14px;
+    max-height: 43px;
+  }
+  // Small Image 
+  .background-image {
+    background-image: url("../images/dandelion_mobile.jpg") !important;
+    background-position: 60% center;
+    background-size: cover !important;
+  }
+  // Hidden still takes up the space but can't be seen
+  .text-one,
+  .text-two {
+    display: none;
+    height: 165px;
   }
 }

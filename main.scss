@@ -1,722 +1,798 @@
-@import '_variables.scss';
-// ----------------------------------------------------------------------------------------------------
-// Global Styles
-// ----------------------------------------------------------------------------------------------------
-body {
-  font-family: 'Open Sans', sans-serif;
-  // 400,400i,600,700
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4em;
-  color: white;
-  background-color: white;
-}
-
-// Large Image
-.background-image {
-  background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: white;
-  overflow: hidden;
-  margin-top: 20px !important;
-  height: 940px;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Navigation
-// ----------------------------------------------------------------------------------------------------
-.navbar-default {
-  background-color: $color-accent;
-}
-
-.navbar-fixed-top {
-  top: 0;
-  border-width: 0 0 1px;
-  border-bottom-color: white;
-}
-
-// --------------------------------------------------
-// Navigation : Logo
-// --------------------------------------------------
-.navbar-brand > img {
-  display: block;
-  max-width: 45%;
-  margin-top: -10px;
-  margin-left: 8px;
-}
-
-.navbar-header img {
-  margin-top: -10px
-}
-
-// --------------------------------------------------
-// Navigation : Links
-// --------------------------------------------------
-.navbar-default .navbar-nav>li>a {
-  color: white;
-}
-
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-  color: $color-accent;
-  background-color: white;
-}
-
-// --------------------------------------------------
-// Navigation : Button
-// --------------------------------------------------
-.btn-default {
-  color: $color-accent;
-  font-weight: 600;
-  background-color: $color-accent;
-  border: 1px solid white;
-  margin-right: 15px;
-  &:hover,
-  &:active {
+  @import '_variables.scss';
+  // ----------------------------------------------------------------------------------------------------
+  // Global Styles
+  // ----------------------------------------------------------------------------------------------------
+  body {
+    font-family: 'Open Sans', sans-serif;
+    // 400,400i,600,700
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4em;
     color: white;
     background-color: white;
-    border-color: none;
-    text-decoration: none;
   }
-}
-
-// .btn-default:hover {
-//   color: $color-accent;
-//   background-color: white;
-//   border: 1px solid transparent;
-//   a {
-//     color: $color-accent;
-//   }
-// }
-navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-a:focus,
-a:hover {
-  color: grey;
-  text-decoration: underline;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Main Body Image
-// ----------------------------------------------------------------------------------------------------
-.main-text {
-  padding-right: 30px;
-}
-
-#typedWrapper {
-  font-size: 28px;
-  color: #FFFFFF;
-  margin-bottom: 21px;
-}
-
-.text-two {
-  margin-top: 16px;
-}
-
-// --------------------------------------------------
-// Typed.js Animated Blinking Cursor
-// --------------------------------------------------
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-// --------------------------------------------------
-// Main Intro
-// --------------------------------------------------
-h1 {
-  /* Hello Universe.: */
-  font-size: 48px;
-  color: #FFFFFF;
-  margin-top: 90px;
-}
-
-.intro-text {
-  margin-top: 13px;
-  padding-right: 62px;
-}
-
-h2 {
-  /* My name is Kristie.: */
-  font-size: 28px;
-  color: #FFFFFF;
-}
-
-h4 {
-  /* I offer you 20+ year: */
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-  text-shadow: 0;
-}
-
-.connect-kb {
-  /* Button Rectangle 5: */
-  background: $color-accent;
-  border-radius: 8px;
-  border: none;
-  width: 176px;
-  margin-top: 7px;
-  &:hover {
-    h3 {
-      color: #462B4A;
-    }
-  }
-}
-
-.connect-buttontext {
-  font-size: 18px;
-  color: #FFFFFF;
-  margin-top: 12px;
-}
-
-h3 {
-  /* Connect.: */
-  font-weight: 600;
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.dandelion-text {
-  /* I believe if our wish: */
-  font-size: 12px;
-  color: #FFFFFF;
-  line-height: 23px;
-  margin-top: 37px;
-}
-
-.unicorn {
-  margin-top: 60px;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Web Section Dev Portfolio
-// ----------------------------------------------------------------------------------------------------
-.web-dev {
-  background-color: white;
-}
-
-.images-Container {
-  padding: 40px 0px;
-  background-color: white;
-}
-
-.images-Container .image {
-  height: 183px;
-  padding: 10px 30px;
-  position: relative;
-}
-
-.images-Container .image h3 {
-  width: 30%;
-  position: absolute;
-  bottom: 20px;
-  font-size: 26px;
-  left: 30px;
-  line-height: 1.5em;
-}
-
-.dev-Image .img1 {
-  background-image: url('../images/nye513app.jpg');
-  background-size: cover;
-  background-position: initial;
-}
-
-.images-Container .img2 {
-  background-image: url('../images/kristieglamApp-01.jpg');
-  background-size: cover;
-  background-position: initial;
-}
-
-.images-Container .img3 {
-  background-image: url('../images/museekApp-01.jpg');
-  background-size: cover;
-  background-position: initial;
-}
-
-.images-Container .img4 {
-  background-image: url('../images/weatherApp-01.jpg');
-  background-size: cover;
-  background-position: initial;
-}
-
-.images-Container .img5 {
-  background-image: url('../images/holdPleaseApp.jpg');
-  background-size: cover;
-  background-position: initial;
-}
-
-.images-Container .img6 {
-  background-image: url('../images/githubRecreate-01.jpg');
-  background-size: cover;
-  background-position: initial;
-}
-
-// Slide in overlay from left
-.container {
-  position: relative;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  &:hover .overlay {
-    width: 100%;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(74, 74, 74, .9);
+  
+  // Large Image
+  .background-image {
+    background: url(../images/dandelion_adobeStock_30141593_v6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
     overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: 1.0s ease;
-    .text-overlay {
-      width: 300px;
-    }
+    margin-top: 20px !important;
+    height: 940px;
   }
-}
-
-.text {
-  white-space: nowrap;
-  color: white;
-  font-size: 18px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.images-Container .image h3 {
-  width: 30%;
-  position: absolute;
-  bottom: 20px;
-  font-size: 18px;
-  left: 30px;
-  line-height: 1.5em;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Skills + Education
-// ----------------------------------------------------------------------------------------------------
-.cred-section {
-  margin: 0 auto;
-  background-color: $color-accent;
-  padding-right: 15%;
-  padding-left: 15%;
-}
-
-.cred-wrapper {
-  text-align: center;
-  margin-top: 67px;
-  margin: 0 auto;
-  margin-bottom: 67px;
-}
-
-.icon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  background: transparent;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 3px solid white;
-  margin-top: 67px;
-}
-
--foo .cred-title {
-  /* Print + Packaging De: */
-  font-weight: 600;
-  font-size: 21px;
-  color: #FFFFFF;
-  margin-top: 22px;
-  text-shadow: none;
-}
-
-.institute {
-  /* The Iron Yard Front-: */
-  font-weight: 600;
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-  text-shadow: none;
-  text-decoration: underline;
-}
-
-.degree {
-  /* The Iron Yard Front-: */
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.street {
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.city {
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.number {
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 26px;
-}
-
-.fa {
-  /* laptop - FontAwesome: */
-  font-family: FontAwesome;
-  font-size: 44px;
-  color: #FFFFFF;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 20px;
-  margin-top: 23px;
-}
-
-ul {
-  list-style: none;
-  /* Concept – Executed E: */
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 30px;
-  text-align: center;
-  padding-left: 0;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Brand Experience
-// ----------------------------------------------------------------------------------------------------
-#brand {
-  background-color: $color-darkGrey;
-}
-
-.brand-section {
-  padding: 0px 15%;
-}
-
-.brand-text {
-  text-align: center;
-  margin-top: -20px;
-}
-
-h2.brand-sub {
-  /* Abbrvtd. Collection: */
-  font-size: 28px;
-  color: #9B9B9B;
-  margin-top: 3px;
-}
-
-p.brand-description {
-  /* I offer you 20+ year: */
-  font-size: 14px;
-  color: #9B9B9B;
-  line-height: 26px;
-  padding-bottom: 13px;
-}
-
-.brand-title {
-  /* Brand Experience: */
-  font-size: 48px;
-  color: #9B9B9B;
-}
-
-img {
-  max-width: 85%;
-  margin-top: 20px;
-}
-
-.pantene {
-  margin-top: -29px;
-}
-
-.rejoice {
-  margin-top: 35px;
-}
-
-.saralee {
-  margin-top: -8px;
-}
-
-.gillette {
-  margin-top: 13px;
-}
-
-.herbalessences {
-  margin-top: -5px;
-}
-
-.eukanuba {
-  margin-top: 12px;
-}
-
-.olay {
-  margin-top: 4px;
-}
-
-.hershey {
-  margin-top: 11px;
-}
-
-.sofit {
-  margin-top: -21px;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Print Design Portfolio
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Penny
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Footer
-// ----------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------
-// SECTION : Footer
-// ----------------------------------------------------------------------------------------------------
-.sign-off {
-  background-color: $color-accent;
-}
-
-.icon-footer .fa {
-  font-family: FontAwesome;
-  font-size: 18px;
-  color: #FFFFFF;
-  border-color: white;
-  border-width: 2px;
-  padding-right: 7px;
-  padding-left: 7px;
-  float: right;
-  border: 2px solid white;
-  border-radius: 81%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  margin-top: 16px;
-}
-
-.fa-paper-plane {
-  font-size: 15px !important;
-}
-
-.footer-logo {
-  margin-top: -4px !important;
-}
-
-// ----------------------------------------------------------------------------------------------------
-// Responsive Styles
-// ----------------------------------------------------------------------------------------------------
-// --------------------------------------------------
-// MEDIA QUERIES : 917 */
-// --------------------------------------------------
-@media screen and (max-width: 917px) {
-  // Medium Image
-  .background-image {
-
-    background-image: url("../images/dandelion_mobile.jpg") !important;
-    background-position: 60% 0px;
-    background-size: cover !important;
-    height: 627px;
-  }
-  .images-Container .image {
-    background-position: center !important;
-  }
-  .background-image {
-    height: auto;
-  }
-  .unicorn {}
-  .navbar-form button {
-    margin: 0px auto;
-    display: block;
-
-  }
-  .navbar-brand {
-    width: 80%;
-  }
-  .navbar-brand > img {
-    max-width: 84%;
-  }
-  .navbar-brand > img {
-    max-width: 84%;
-  }
-  // logo
-.navbar-brand > img {
-    max-width: 46%;
-    margin-top: -11px;
-}
-  .footer-unit {
-    display: none;
-  }
-  // Hides main text
-  // Reformatting text 
-  h1 {
-    font-size: 28px;
-    margin-top: 170px;
-  }
-  h2 {
-    font-size: 18px;
-    line-height: 25px;
-    margin-top: 191px;
-  }
-  .dandelion-text {
-    padding-right: 40px;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400i;
-  }
-  #typedWrapper {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .dev-Image {
-    margin-bottom: 15px;
-  }
-  .main-text h1 {
-    font-size: 28px;
-    margin-top: 82px;
-  }
-  .icon {
-    border: 4px solid white;
-  }
-  .connect-kb {
-    background: #73477A;
-    border-radius: 8px;
-    border: none;
-    width: 116px;
-    margin-top: 7px;
-    padding: 10px;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
+  
+  // ----------------------------------------------------------------------------------------------------
+  // Navigation
+  // ----------------------------------------------------------------------------------------------------
+  .navbar-default {
     background-color: $color-accent;
   }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
+  
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    border-bottom-color: white;
   }
-  .navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: white;
-    background-image: none;
-    /* border: 1px solid transparent; */
-    border-radius: 4px;
-  }
-  img {
-    max-width: 68%;
-    margin-top: 10px;
-  }
-  .icon-footer {
-    padding-right: 31px;
-  }
-  .brand-title {
-    font-size: 42px;
-    color: #9B9B9B;
-    margin-top: 69px;
-  }
-  .icon-footer {
-    padding-right: 31px;
-    width: 309px;
+  
+  // --------------------------------------------------
+  // Navigation : Logo
+  // --------------------------------------------------
+  .navbar-brand > img {
     display: block;
-    margin: 0px auto;
+    max-width: 45%;
+    margin-top: -10px;
+    margin-left: 8px;
   }
-}
-
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left;
-    // margin-top: 0px;
-    width: 37%;
-    img {
-      //margin-top:0;
+  
+  .navbar-header img {
+    margin-top: -10px
+  }
+  
+  // --------------------------------------------------
+  // Navigation : Links
+  // --------------------------------------------------
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+  }
+  
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a:hover {
+    color: $color-accent;
+    background-color: white;
+  }
+  
+  // --------------------------------------------------
+  // Navigation : Button
+  // --------------------------------------------------
+  .btn-default {
+    color: $color-accent;
+    font-weight: 600;
+    background-color: $color-accent;
+    border: 2px solid white !important;
+    margin-right: 15px;
+    &:hover,
+    &:active {
+      color: white;
+      background-color: white;
+      border-color: none;
+      text-decoration: none;
     }
   }
-}
-
-// --------------------------------------------------
-// MEDIA QUERIES : 468 */
-// --------------------------------------------------
-@media screen and (max-width: 468px) {
-  .navbar-brand > img {
-    //margin-top: -14px;
-    max-height: 43px;
+  
+  navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: none;
   }
-  // Small Image 
-  .background-image {
-    background-image: url("../images/dandelion_mobile.jpg") !important;
-    background-position: 60% center;
-    background-size: cover !important;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
-  // Hidden still takes up the space but can't be seen
-  .text-one,
+  
+  a:focus,
+  a:hover {
+    color: grey;
+    text-decoration: underline;
+  }
+  
+  // ----------------------------------------------------------------------------------------------------
+  // Main Body Image
+  // ----------------------------------------------------------------------------------------------------
+  .main-text {
+    padding-right: 30px;
+  }
+  
+  #typedWrapper {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+  }
+  
   .text-two {
-    display: none;
-    height: 165px;
+    margin-top: 16px;
   }
-}
+  
+  // --------------------------------------------------
+  // Typed.js Animated Blinking Cursor
+  // --------------------------------------------------
+  .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  // --------------------------------------------------
+  // Main Intro
+  // --------------------------------------------------
+  h1 {
+    /* Hello Universe.: */
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-top: 90px;
+  }
+  
+  .intro-text {
+    margin-top: 13px;
+    padding-right: 62px;
+  }
+  
+  h2 {
+    /* My name is Kristie.: */
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+  
+  h4 {
+    /* I offer you 20+ year: */
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 26px;
+    text-shadow: 0;
+  }
+  
+  .connect-kb {
+    /* Button Rectangle 5: */
+    background: $color-accent;
+    border-radius: 8px;
+    border: none;
+    width: 176px;
+    margin-top: 7px;
+    &:hover {
+      h3 {
+        color: #462B4A;
+      }
+    }
+  }
+  
+  .connect-buttontext {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 12px;
+  }
+  
+  h3 {
+    /* Connect.: */
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  
+  .dandelion-text {
+    /* I believe if our wish: */
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 23px;
+    margin-top: 37px;
+  }
+  
+  .unicorn {
+    margin-top: 60px;
+    h2 {
+      font-size: 28px;
+      color: #FFFFFF;
+      line-height: 36px;
+    }
+  }
+  
+  // ----------------------------------------------------------------------------------------------------
+  // Web Section Dev Portfolio
+  // ----------------------------------------------------------------------------------------------------
+  .web-dev {
+    background-color: white;
+  }
+  
+  .images-Container {
+    padding: 40px 0px;
+    background-color: white;
+  }
+  
+  .images-Container .image {
+    height: 183px;
+    padding: 10px 30px;
+    position: relative;
+  }
+  
+  .images-Container .image h3 {
+    width: 30%;
+    position: absolute;
+    bottom: 20px;
+    font-size: 26px;
+    left: 30px;
+    line-height: 1.5em;
+  }
+  
+  .dev-Image .img1 {
+    background-image: url('../images/nye513app.jpg');
+    background-size: cover;
+    background-position: initial;
+  }
+  
+  .images-Container .img2 {
+    background-image: url('../images/kristieglamApp-01.jpg');
+    background-size: cover;
+    background-position: initial;
+  }
+  
+  .images-Container .img3 {
+    background-image: url('../images/museekApp-01.jpg');
+    background-size: cover;
+    background-position: initial;
+  }
+  
+  .images-Container .img4 {
+    background-image: url('../images/weatherApp-01.jpg');
+    background-size: cover;
+    background-position: initial;
+  }
+  
+  .images-Container .img5 {
+    background-image: url('../images/holdPleaseApp.jpg');
+    background-size: cover;
+    background-position: initial;
+  }
+  
+  .images-Container .img6 {
+    background-image: url('../images/githubRecreate-01.jpg');
+    background-size: cover;
+    background-position: initial;
+  }
+  
+  // Slide in overlay from left
+  .container {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    &:hover .overlay {
+      width: 100%;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(74, 74, 74, .9);
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: 1.0s ease;
+      .text-overlay {
+        width: 300px;
+      }
+    }
+  }
+  
+  .text {
+    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .images-Container .image h3 {
+    width: 30%;
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    left: 30px;
+    line-height: 1.5em;
+  }
+  
+  .zest {
+    margin-bottom: 28px;
+    margin-top: -10px;
+  }
+  
+  // ----------------------------------------------------------------------------------------------------
+  // SECTION : Skills + Education
+  // ----------------------------------------------------------------------------------------------------
+  .cred-section {
+    margin: 0 auto;
+    background-color: $color-accent;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  
+  .cred-wrapper {
+    text-align: center;
+    margin-top: 67px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
+  
+  .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 3px solid white;
+    margin-top: 67px;
+  }
+  
+  -foo .cred-title {
+    /* Print + Packaging De: */
+    font-weight: 600;
+    font-size: 21px;
+    color: #FFFFFF;
+    margin-top: 22px;
+    text-shadow: none;
+  }
+  
+  .institute {
+    /* The Iron Yard Front-: */
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 26px;
+    text-shadow: none;
+    text-decoration: underline;
+  }
+  
+  .degree {
+    /* The Iron Yard Front-: */
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 26px;
+  }
+  
+  .street {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 26px;
+  }
+  
+  .city {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 26px;
+  }
+  
+  .number {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 26px;
+  }
+  
+  .fa {
+    /* laptop - FontAwesome: */
+    font-family: FontAwesome;
+    font-size: 44px;
+    color: #FFFFFF;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 20px;
+    margin-top: 23px;
+  }
+  
+  ul {
+    list-style: none;
+    /* Concept – Executed E: */
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  // ----------------------------------------------------------------------------------------------------
+  // SECTION : Brand Experience
+  // ----------------------------------------------------------------------------------------------------
+  #brand {
+    background-color: $color-darkGrey;
+  }
+  
+  .brand-section {
+    padding: 0px 15%;
+  }
+  
+  .brand-text {
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  h2.brand-sub {
+    /* Abbrvtd. Collection: */
+    font-size: 28px;
+    color: #9B9B9B;
+    margin-top: 3px;
+  }
+  
+  p.brand-description {
+    /* I offer you 20+ year: */
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 26px;
+    padding-bottom: 13px;
+  }
+  
+  .brand-title {
+    /* Brand Experience: */
+    font-size: 48px;
+    color: #9B9B9B;
+  }
+  
+  img {
+    max-width: 85%;
+    margin-top: 20px;
+  }
+  
+  .pantene {
+    margin-top: -29px;
+  }
+  
+  .rejoice {
+    margin-top: 35px;
+  }
+  
+  .saralee {
+    margin-top: -8px;
+  }
+  
+  .gillette {
+    margin-top: 13px;
+  }
+  
+  .herbalessences {
+    margin-top: -5px;
+  }
+  
+  .eukanuba {
+    margin-top: 12px;
+  }
+  
+  .olay {
+    margin-top: 4px;
+  }
+  
+  .hershey {
+    margin-top: 11px;
+  }
+  
+  .sofit {
+    margin-top: -21px;
+  }
+  
+  // ----------------------------------------------------------------------------------------------------
+  // SECTION : Print Design Portfolio
+  // ----------------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------------------------
+  // SECTION : Penny
+  // ----------------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------------------------
+  // SECTION : Footer
+  // ----------------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------------------------
+  // SECTION : Footer
+  // ----------------------------------------------------------------------------------------------------
+  .sign-off {
+    background-color: $color-accent;
+  }
+  
+  .icon-footer .fa {
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-color: white;
+    border-width: 2px;
+    float: right;
+    /* border-radius: 81%; */
+    margin-right: 25px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  
+  .fa-paper-plane {
+    font-size: 15px !important;
+  }
+  
+  .footer-logo {
+    margin-top: -4px !important;
+  }
+  
+  // ----------------------------------------------------------------------------------------------------
+  // Responsive Styles
+  // ----------------------------------------------------------------------------------------------------
+  // --------------------------------------------------
+  // MEDIA QUERIES : 1024 */
+  // --------------------------------------------------
+  @media screen and (max-width: 1024px) {
+    // Medium Image
+    .background-image {
+      background-image: url("../images/dandelion_adobeStock_30141593_v8.jpg") !important;
+      background-position: 60% 0px;
+      background-size: cover !important;
+      height: 850px;
+    }
+  }
+  
+  // --------------------------------------------------
+  // MEDIA QUERIES : 917 */
+  // --------------------------------------------------
+  @media screen and (max-width: 917px) {
+    // Medium Image
+    .background-image {
+      background-image: url("../images/dandelion_adobeStock_30141593_v7.jpg") !important;
+      background-position: 60% 0px;
+      background-size: cover !important;
+      height: 627px;
+    }
+    .images-Container .image {
+      background-position: center !important;
+    }
+    .background-image {
+      height: auto;
+    }
+    .unicorn {}
+    .navbar-form button {
+      margin: 0px auto;
+      display: block;
+    }
+    .navbar-brand {
+      width: 80%;
+    }
+    .navbar-brand > img {
+      max-width: 84%;
+    }
+    .navbar-brand > img {
+      max-width: 84%;
+    }
+    // logo
+    .navbar-brand > img {
+      max-width: 46%;
+      margin-top: -11px;
+    }
+    .footer-unit {
+      display: none;
+    }
+    // Hides main text
+    // Reformatting text 
+    h1 {
+      font-size: 28px;
+      margin-top: 170px;
+    }
+    h2 {
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 191px;
+    }
+    .dandelion-text {
+      padding-right: 40px;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400i;
+    }
+    #typedWrapper {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .dev-Image {
+      margin-bottom: 15px;
+    }
+    .main-text h1 {
+      font-size: 28px;
+      margin-top: 102px;
+    }
+    .icon {
+      border: 4px solid white;
+    }
+    .connect-kb {
+      background: #73477A;
+      border-radius: 8px;
+      border: none;
+      width: 116px;
+      margin-top: 7px;
+      padding: 10px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: $color-accent;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      padding: 9px 10px;
+      margin-top: 8px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+      background-color: white;
+      background-image: none;
+      /* border: 1px solid transparent; */
+      border-radius: 4px;
+    }
+    img {
+      max-width: 55%;
+      margin-top: 10px;
+    }
+    .icon-footer {
+      padding-right: 31px;
+    }
+    .brand-title {
+      font-size: 42px;
+      color: #9B9B9B;
+      margin-top: 69px;
+    }
+    .icon-footer {
+      padding-right: 31px;
+      width: 309px;
+      display: block;
+      margin: 0px auto;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-header {
+      float: left;
+      // margin-top: 0px;
+      width: 37%;
+      img {
+        //margin-top:0;
+      }
+    }
+  }
+  
+  // --------------------------------------------------
+  // MEDIA QUERIES : 768 */
+  // --------------------------------------------------
+  @media screen and (max-width: 768px) {
+    .intro-text {
+      margin-top: 13px;
+      padding-right: 400px;
+    }
+    .navbar-brand > img {
+      max-width: 87%;
+      margin-top: -11px;
+    }
+    .text-one,
+    .text-two {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-top: -4px;
+    }
+    .connect-kb {
+      margin-top: 0;
+      padding: 0px;
+    }
+    .dandelion-text {
+      padding-right: 444px;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 17px;
+    }
+    .connect-buttontext {
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-top: 8px;
+    }
+  }
+  
+  // --------------------------------------------------
+  // MEDIA QUERIES : 468 */
+  // --------------------------------------------------
+  @media screen and (max-width: 468px) {
+    .navbar-brand > img {
+      //margin-top: -14px;
+      max-height: 43px;
+    }
+    // Small Image 
+    .background-image {
+      background-image: url("../images/dandelion_mobile.jpg") !important;
+      background-position: 60% center;
+      background-size: cover !important;
+    }
+    // Hidden still takes up the space but can't be seen
+    .text-one,
+    .text-two {
+      display: none;
+      height: 165px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dandelion-text {
+      padding-right: 144px;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 17px;
+    }
+  }
+  
+  // --------------------------------------------------
+  // MEDIA QUERIES : 425 */
+  // --------------------------------------------------
+  @media screen and (max-width: 425px) {
+    .dandelion-text {
+      padding-right: 144px;
+    }
+    h2 {
+      margin-top: 300px;
+    }
+  }
+  
+  // --------------------------------------------------
+  // MEDIA QUERIES : 320 */
+  // --------------------------------------------------
+  @media screen and (max-width: 320px) {
+    .icon-footer .fa {
+      margin-right: 31px;
+    }
+  }

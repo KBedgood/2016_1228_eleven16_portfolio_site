@@ -72,12 +72,14 @@
     background-color: $color-accent;
     border: 2px solid white !important;
     margin-right: 15px;
-    &:hover,
-    &:active {
-      color: white;
-      background-color: white;
-      border-color: none;
+    &:hover {
       text-decoration: none;
+      &:active {
+        color: white;
+        background-color: white;
+        border-color: none;
+        text-decoration: none;
+      }
     }
   }
   
@@ -547,8 +549,8 @@
     font-family: FontAwesome;
     font-size: 18px;
     color: #FFFFFF;
-    border-color: white;
-    border-width: 2px;
+    // border-color: white;
+    // border-width: 2px;
     float: right;
     /* border-radius: 81%; */
     margin-right: 25px;

@@ -47,11 +47,13 @@ body {
   background-color: #73477A;
   border: 2px solid white !important;
   margin-right: 15px; }
-  .btn-default:hover, .btn-default:active {
-    color: white;
-    background-color: white;
-    border-color: none;
+  .btn-default:hover {
     text-decoration: none; }
+    .btn-default:hover:active {
+      color: white;
+      background-color: white;
+      border-color: none;
+      text-decoration: none; }
 
 navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -409,8 +411,6 @@ img {
   font-family: FontAwesome;
   font-size: 18px;
   color: #FFFFFF;
-  border-color: white;
-  border-width: 2px;
   float: right;
   /* border-radius: 81%; */
   margin-right: 25px;
